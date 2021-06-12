@@ -7,9 +7,9 @@ export default function Home() {
     <div>
       <SafeEnvironment />
       <PageTitle
-        title={'Conheça os profissionais'}
+        title={'Conheça as diaristas'}
         subtitle={
-          'Preencha seu endereço e veja todos os profissionais da sua localidade'
+          'Preencha seu endereço e veja as diaristas da sua localidade'
         }
       />
 
