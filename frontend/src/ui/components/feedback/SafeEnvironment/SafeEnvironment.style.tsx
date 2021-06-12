@@ -1,4 +1,4 @@
-import { experimentalStyled as styled } from '@material-ui/core/styles'
+import { experimentalStyled as styled } from '@material-ui/core/styles';
 
 export const SafeEnvironmentContainer = styled('div')`
   background-color: ${({ theme }) => theme.palette.background.default};
