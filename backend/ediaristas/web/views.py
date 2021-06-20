@@ -4,5 +4,10 @@ from .forms import diarista_form
 
 # Create your views here.
 def cadastrar_diarista(request):
-    form_diarista = diarista_form.DiaristaForm()
+    if request.method == 'POST':
+        form_diarista = diarista_form.DiaristaForm(request.POST, request.FILES)
+        if form_diarista.is_valid():
+            form_diarista.save()
+    else:
+        form_diarista = diarista_form.DiaristaForm()
     return render(request, 'form_diarista.html', {'form_diarista': form_diarista})
