@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load easy_mask %}
 {% block conteudo %}
-<h4 class="border-bottom pb-2 mb-0">Diaristas Cadastradas</h4>
+<h3 class="pb-2 mb-0 text-primary">Diaristas</h3>
+<h5 class="pb-4 mb-0 fw-light">Visão geral das diaristas cadastradas</h5>
 <div class="my-3 p-3 bg-body rounded shadow-sm">
-    <div class="my-3 p-3">
-        <table class="table">
+    <div class="my-3 p-3 table-responsive">
+        <table class="table align-middle">
             <thead>
             <tr>
                 <th>#</th>
@@ -25,8 +26,8 @@
                     <a href="{% url 'editar_diarista' diarista.id %}" data-bs-toggle="tooltip" title="Editar">
                         <i data-feather="edit"></i>
                     </a>
-                    <a href="{% url 'remover_diarista' diarista.id %}" data-bs-toggle="tooltip" title="Excluir">
-                        <i data-feather="trash-2"></i>
+                    <a href="{% url 'remover_diarista' diarista.id %}" data-bs-toggle="tooltip" title="Remover">
+                        <i data-feather="trash-2"> </i>
                     </a>
                 </td>
             </tr>

@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block conteudo %}
-<h4 class="border-bottom pb-2 mb-0">Cadastro</h4>
+<h3 class="pb-2 mb-0 text-primary">Registro de Diarista</h3>
+<h5 class="pb-4 mb-0 fw-light">Utilize este formulário para cadastrar ou atualizar os dados das diaristas</h5>
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <div class="my-3 p-3">
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{form_diarista|crispy}}
-            <div class="py-4 d-grid col-2">
-                <button type="submit" class="btn btn-primary">Submeter</button>
+            <div class="row">
+                <div class="py-4 d-grid col col-lg-2">
+                    <a href="{% url 'listar_diaristas' %}" class="btn btn-outline-primary" role="button">Cancelar</a>
+                </div>
+                <div class="py-4 d-grid col col-lg-2">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
             </div>
         </form>
     </div>
