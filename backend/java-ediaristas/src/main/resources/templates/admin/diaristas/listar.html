@@ -25,7 +25,8 @@
                             <td th:text="${diarista.email}"></td>
                             <td th:text="${diarista.estado}"></td>
                             <td>
-                                <a href="#" data-bs-toggle="tooltip" title="Editar">
+                                <a th:href="@{/admin/diaristas/{id}/editar (id=${diarista.id})}"
+                                    data-bs-toggle="tooltip" title="Editar">
                                     <i data-feather="edit"></i>
                                 </a>
                                 <a th:href="@{/admin/diaristas/{id}/excluir (id=${diarista.id})}"

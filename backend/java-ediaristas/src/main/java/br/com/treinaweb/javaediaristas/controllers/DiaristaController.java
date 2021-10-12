@@ -43,6 +43,15 @@ public class DiaristaController {
         return "redirect:/admin/diaristas";
     }
 
+    @GetMapping("/{id}/editar")
+    public ModelAndView editar(@PathVariable Long id) {
+        var modelAndView = new ModelAndView("admin/diaristas/form");
+
+        modelAndView.addObject("diarista", repository.getById(id));
+
+        return modelAndView;
+    }
+
     @GetMapping("/{id}/excluir")
     public String excluir(@PathVariable Long id) {
         repository.deleteById(id);
