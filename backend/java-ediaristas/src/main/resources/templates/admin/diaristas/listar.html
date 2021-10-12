@@ -28,7 +28,9 @@
                                 <a href="#" data-bs-toggle="tooltip" title="Editar">
                                     <i data-feather="edit"></i>
                                 </a>
-                                <a href="#" data-bs-toggle="tooltip" title="Remover">
+                                <a th:href="@{/admin/diaristas/{id}/excluir (id=${diarista.id})}"
+                                    data-bs-toggle="tooltip" title="Remover"
+                                    onclick="return confirm('Tem certeza que deseja excluir esse registro?')">
                                     <i data-feather="trash-2"> </i>
                                 </a>
                             </td>
