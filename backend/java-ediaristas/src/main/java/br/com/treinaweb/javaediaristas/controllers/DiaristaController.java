@@ -39,6 +39,6 @@ public class DiaristaController {
     public String cadastrar(Diarista diarista) {
         repository.save(diarista);
 
-        return "redirect:/admin/diaristas/cadastrar";
+        return "redirect:/admin/diaristas";
     }
 }
