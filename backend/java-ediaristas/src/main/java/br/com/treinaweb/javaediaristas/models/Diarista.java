@@ -1,6 +1,7 @@
 package br.com.treinaweb.javaediaristas.models;
 
 import javax.persistence.Column;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,6 +13,9 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.br.CPF;
 
+import br.com.treinaweb.javaediaristas.converters.CepConverter;
+import br.com.treinaweb.javaediaristas.converters.CpfConverter;
+import br.com.treinaweb.javaediaristas.converters.TelefoneConverter;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -35,9 +39,10 @@ public class Diarista {
     private String nomeCompleto;
 
     @NotNull
-    @Size(min = 11, max = 15)
+    @Size(min = 11, max = 14)
     @CPF
     @Column(nullable = false, unique = true, length = 11)
+    @Convert(converter = CpfConverter.class)
     private String cpf;
 
     @NotNull
@@ -47,8 +52,9 @@ public class Diarista {
     private String email;
 
     @NotNull
-    @Size(min = 11, max = 14)
+    @Size(min = 11, max = 15)
     @Column(nullable = false, length = 11)
+    @Convert(converter = TelefoneConverter.class)
     private String telefone;
 
     @NotNull
@@ -72,6 +78,7 @@ public class Diarista {
     @NotNull
     @Size(min = 8, max = 9)
     @Column(nullable = false, length = 8)
+    @Convert(converter = CepConverter.class)
     private String cep;
 
     @NotNull
