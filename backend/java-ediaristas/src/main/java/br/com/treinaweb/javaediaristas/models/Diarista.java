@@ -35,7 +35,7 @@ public class Diarista {
     private String nomeCompleto;
 
     @NotNull
-    @Size(min = 11, max = 14)
+    @Size(min = 11, max = 15)
     @CPF
     @Column(nullable = false, unique = true, length = 11)
     private String cpf;
