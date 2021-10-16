@@ -1,5 +1,10 @@
 package br.com.treinaweb.javaediaristas.models;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
+import java.io.IOException;
+
 import javax.persistence.Column;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
@@ -16,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.hibernate.validator.constraints.br.CPF;
 
+import br.com.treinaweb.javaediaristas.controllers.FileController;
 import br.com.treinaweb.javaediaristas.converters.CepConverter;
 import br.com.treinaweb.javaediaristas.converters.CpfConverter;
 import br.com.treinaweb.javaediaristas.converters.TelefoneConverter;
@@ -108,5 +114,12 @@ public class Diarista {
     private String codigoIbge;
 
     @Column(nullable = false)
+    @JsonIgnore
     private String foto;
+
+    @JsonProperty("foto_usuario")
+    public String getFotoUrl() throws IOException {
+        return linkTo(methodOn(FileController.class).file(this.foto)).toString();
+    }
+    
 }
