@@ -11,7 +11,7 @@
 
                 <form method="post" class="row g-3" enctype="multipart/form-data" th:object="${diarista}">
 
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 col-md-8 mb-3">
                         <label class="form-label" for="nomeCompleto">Nome Completo</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('nomeCompleto')} ? 'is-invalid'"
                             type="text" th:field="*{nomeCompleto}">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mb-3">
+                    <div class="col-lg-2 col-md-4 mb-3">
                         <label class="form-label" for="cpf">CPF</label>
                         <input data-mask="000.000.000-00" class="form-control"
                             th:classappend="${#fields.hasErrors('cpf')} ? 'is-invalid'" type="text" th:field="*{cpf}">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-lg-4 col-md-8 mb-3">
                         <label class="form-label" for="email">E-mail</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('email')} ? 'is-invalid'"
                             type="text" th:field="*{email}">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mb-3">
+                    <div class="col-lg-2 col-md-4 mb-3">
                         <label class="form-label" for="telefone">Telefone</label>
                         <input data-mask="(00) 00000-0000" class="form-control"
                             th:classappend="${#fields.hasErrors('telefone')} ? 'is-invalid'" type="text"
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8 mb-3">
+                    <div class="col-lg-8 col-md-10 mb-3">
                         <label class="form-label" for="logradouro">Logradouro</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('logradouro')} ? 'is-invalid'"
                             type="text" th:field="*{logradouro}">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mb-3">
+                    <div class="col-lg-2 col-md-2 mb-3">
                         <label class="form-label" for="numero">Número</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('numero')} ? 'is-invalid'"
                             type="text" th:field="*{numero}">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8 mb-3">
+                    <div class="col-lg-8 col-md-8 mb-3">
                         <label class="form-label" for="bairro">Bairro</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('bairro')} ? 'is-invalid'"
                             type="text" th:field="*{bairro}">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
                         <label class="form-label" for="complemento">Complemento</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('complemento')} ? 'is-invalid'"
                             type="text" th:field="*{complemento}">
@@ -106,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mb-3">
+                    <div class="col-lg-2 col-md-3 mb-3">
                         <label class="form-label" for="cep">CEP</label>
                         <input data-mask="00000-000" class="form-control"
                             th:classappend="${#fields.hasErrors('cep')} ? 'is-invalid'" type="text" th:field="*{cep}">
@@ -118,7 +118,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-8 mb-3">
+                    <div class="col-lg-8 col-md-7 mb-3">
                         <label class="form-label" for="cidade">Cidade</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('cidade')} ? 'is-invalid'"
                             type="text" th:field="*{cidade}">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 mb-3">
+                    <div class="col-lg-2 col-md-2 mb-3">
                         <label class="form-label" for="estado">Estado</label>
                         <input class="form-control" th:classappend="${#fields.hasErrors('estado')} ? 'is-invalid'"
                             type="text" th:field="*{estado}">
@@ -142,11 +142,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 mb-3">
+                    <div class="col-lg-12 mb-3">
                         <label class="form-label" for="imagem">Imagem</label>
                         <input class="form-control" type="file" id="imagem" name="imagem">
                     </div>
-
                     <div class="row">
                         <div class="py-4 d-grid col col-lg-2">
                             <a th:href="@{/admin/diaristas}" class="btn btn-outline-primary" role="button">Cancelar</a>
@@ -158,6 +157,7 @@
                 </form>
             </div>
         </div>
+
     </main>
 </body>
 
