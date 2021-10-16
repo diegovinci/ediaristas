@@ -37,4 +37,9 @@ export const ProfessionalsContainer = styled('div')`
       background-color: ${({ theme }) => theme.palette.background.paper};
     }
   }
+
+  ${({ theme }) => theme.breakpoints.up('lg')} {
+    grid-template-columns: repeat(3, 1fr);
+    gap: ${({ theme }) => theme.spacing(6)}
+  }
 `;
