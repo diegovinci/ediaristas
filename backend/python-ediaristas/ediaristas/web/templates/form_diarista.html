@@ -3,11 +3,50 @@
 {% block conteudo %}
 <h3 class="pb-2 mb-0 text-primary">Registro de Diarista</h3>
 <h5 class="pb-4 mb-0 fw-light">Utilize este formulário para cadastrar ou atualizar os dados das diaristas</h5>
+
 <div class="my-3 p-3 bg-body rounded shadow-sm">
     <div class="my-3 p-3">
-        <form method="post" enctype="multipart/form-data">
+
+        <form method="post" class="row g-3" enctype="multipart/form-data">
             {% csrf_token %}
-            {{form_diarista|crispy}}
+
+            <div class="col-lg-6 col-md-8 mb-3">
+                {{form_diarista.nome_completo|as_crispy_field}}
+            </div>
+            <div class="col-lg-2 col-md-4 mb-3">
+                {{form_diarista.cpf|as_crispy_field}}
+            </div>
+            <div class="col-lg-4 col-md-8 mb-3">
+                {{form_diarista.email|as_crispy_field}}
+            </div>
+            <div class="col-lg-2 col-md-4 mb-3">
+                {{form_diarista.telefone|as_crispy_field}}
+            </div>
+            <div class="col-lg-8 col-md-10 mb-3">
+                {{form_diarista.logradouro|as_crispy_field}}
+            </div>
+            <div class="col-lg-2 col-md-2 mb-3">
+                {{form_diarista.numero|as_crispy_field}}
+            </div>
+            <div class="col-lg-8 col-md-8 mb-3">
+                {{form_diarista.bairro|as_crispy_field}}
+            </div>
+            <div class="col-lg-4 col-md-4 mb-3">
+                {{form_diarista.complemento|as_crispy_field}}
+            </div>
+            <div class="col-lg-2 col-md-3 mb-3">
+                {{form_diarista.cep|as_crispy_field}}
+            </div>
+            <div class="col-lg-8 col-md-7 mb-3">
+                {{form_diarista.cidade|as_crispy_field}}
+            </div>
+            <div class="col-lg-2 col-md-2 mb-3">
+                {{form_diarista.estado|as_crispy_field}}
+            </div>
+            <div class="col-lg-12 mb-3">
+                {{form_diarista.foto_usuario|as_crispy_field}}
+            </div>
+
             <div class="row">
                 <div class="py-4 d-grid col col-lg-2">
                     <a href="{% url 'listar_diaristas' %}" class="btn btn-outline-primary" role="button">Cancelar</a>

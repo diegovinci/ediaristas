@@ -11,7 +11,8 @@
                 <th>#</th>
                 <th>Nome</th>
                 <th>Email</th>
-                <th>CEP</th>
+                <th>Cidade</th>
+                <th>Estado</th>
                 <th>Ações</th>
             </tr>
             </thead>
@@ -21,7 +22,8 @@
                 <td>{{diarista.id}}</td>
                 <td>{{diarista.nome_completo}}</td>
                 <td>{{diarista.email}}</td>
-                <td>{{diarista.cep | cep}}</td>
+                <td>{{diarista.cidade}}</td>
+                <td>{{diarista.estado}}</td>
                 <td>
                     <a href="{% url 'editar_diarista' diarista.id %}" data-bs-toggle="tooltip" title="Editar">
                         <i data-feather="edit"></i>
@@ -34,9 +36,9 @@
             {% endfor %}
             </tbody>
         </table>
-        <div class="py-4 d-grid col-2">
-            <a href="{% url 'cadastrar_diarista' %}" class="btn btn-primary">Novo</a>
-        </div>
+    </div>
+    <div class="py-4 d-grid col-2">
+        <a href="{% url 'cadastrar_diarista' %}" class="btn btn-primary">Novo</a>
     </div>
 </div>
 {% endblock conteudo %}
