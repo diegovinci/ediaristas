@@ -9,7 +9,7 @@
 
 ## Sobre
 
-E-Diaristas é um projeto fictício que tem por objetivo facilitar a localização de profissionais que atuam no segmento de limpeza doméstica. O projeto possui um sistema administrativo para controle do cadastro de diaristas, bem como uma API web para a exposição dos dados que são consumidos por uma aplicação web front-end e por um aplicativo móvel.
+E-Diaristas é um projeto fictício cujo objetivo é facilitar a localização de profissionais que atuam no segmento de limpeza doméstica. O projeto possui um sistema administrativo para controle do cadastro de diaristas, bem como uma API web para a exposição dos dados consumidos por uma aplicação web front-end e por um aplicativo móvel.
 
 ### Tecnologias
 Principais tecnologias utilizadas na construção do projeto:
@@ -59,7 +59,7 @@ git clone https://github.com/diegovinci/ediaristas.git
 ```
 
 #### 2. Executar o servidor back-end
-O back-end da aplicação possui duas versões alternativas com as mesmas funcionalidades, porém desenvovidas com diferentes tecnologias. Para executar uma das duas opções, siga os passos abaixo.
+O back-end da aplicação possui duas versões alternativas com as mesmas funcionalidades, porém desenvolvidas com diferentes tecnologias. Para executar uma das duas opções, siga os passos abaixo.
 
 **Opção A - Back-end Java**
 
@@ -120,4 +120,4 @@ $ expo start
 ## Licença
 Este projeto está disponível sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/diegovinci/ediaristas/blob/main/LICENSE) para mais detalhes.
 
-Made by Diego Vinciguerra :wave: [Get in touch!](https://www.linkedin.com/in/diegovinci)
+Feito por Diego Vinciguerra :wave: [Entre em contato!](https://www.linkedin.com/in/diegovinci)
