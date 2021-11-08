@@ -34,6 +34,7 @@ Principais tecnologias utilizadas na construção do projeto:
 As instruções a seguir pretendem ser um guia de início rápido para executar as aplicações na sua máquina local.
 
 ### Pré-requisitos
+Para executar este projeto localmente, os softwares a seguir devem estar instalados e configurados:
 - Front-end
     - [Node.js >=14](https://nodejs.org/en/)
     - [NPM >=8](https://www.npmjs.com)
@@ -51,7 +52,7 @@ As instruções a seguir pretendem ser um guia de início rápido para executar 
 
 ### Instruções
 
-Siga as etapas abaixo para configurar e executar o projeto localmente.
+Siga as etapas abaixo para configurar e executar o projeto:
 
 #### 1. Clonar o repositório
 ```bash
@@ -59,7 +60,7 @@ git clone https://github.com/diegovinci/ediaristas.git
 ```
 
 #### 2. Executar o servidor back-end
-O back-end da aplicação possui duas versões alternativas com as mesmas funcionalidades, porém desenvolvidas com diferentes tecnologias. Para executar uma das duas opções, siga os passos abaixo.
+A aplicação back-end possui duas versões alternativas com as mesmas funcionalidades, porém desenvolvidas com diferentes tecnologias. Para executar uma das duas opções, siga os passos abaixo.
 
 **Opção A - Back-end Java**
 
