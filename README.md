@@ -1,10 +1,10 @@
 ![Cover](https://github.com/diegovinci/ediaristas/blob/main/.assets/project-cover.svg)
 
-![Languages](https://img.shields.io/github/languages/count/diegovinci/ediaristas?color=%234E56FF)
-![Top Language](https://img.shields.io/github/languages/top/diegovinci/ediaristas?color=%234E56FF)
-![Repository Size](https://img.shields.io/github/repo-size/diegovinci/ediaristas?color=%234E56FF)
-![Made By](https://img.shields.io/badge/made%20by-diegovinci-%234E56FF)
-![License](https://img.shields.io/badge/license-MIT-%234E56FF)
+![Languages](https://img.shields.io/github/languages/count/diegovinci/ediaristas?color=%236B2AEE)
+![Top Language](https://img.shields.io/github/languages/top/diegovinci/ediaristas?color=%236B2AEE)
+![Repository Size](https://img.shields.io/github/repo-size/diegovinci/ediaristas?color=%236B2AEE)
+![Made By](https://img.shields.io/badge/made%20by-diegovinci-%236B2AEE)
+![License](https://img.shields.io/badge/license-MIT-%236B2AEE)
 
 
 ## Sobre
