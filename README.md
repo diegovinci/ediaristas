@@ -1,4 +1,4 @@
-![Cover](https://github.com/diegovinci/ediaristas/blob/main/.assets/project-cover.svg)
+![Cover](https://github.com/diegovinci/ediaristas/blob/main/.assets/project-cover.png)
 
 ![Languages](https://img.shields.io/github/languages/count/diegovinci/ediaristas?color=%236B2AEE)
 ![Top Language](https://img.shields.io/github/languages/top/diegovinci/ediaristas?color=%236B2AEE)
